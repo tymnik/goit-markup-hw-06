@@ -45,8 +45,7 @@ img {
 }
 
 .container {
-    width: 1158px;
-    padding: 0 15px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -196,28 +195,27 @@ input {
 .hero-block {
     background-color: var(--heading-color);
     background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-        url(../images/hero-img.jpg);
+        url(../images/hero-img-mob.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
-    max-width: 1440px;
-    padding: 188px 0;
-    height: 600px;
+    padding: 112px 0;
+    height: 432px;
     margin-right: auto;
     margin-left: auto;
 }
 
 .hero {
     font-family: "Roboto", sans-serif;
-    font-size: 56px;
-    line-height: 1.07;
+    font-size: 36px;
+    line-height: 1.11;
     letter-spacing: 0.02em;
     text-align: center;
     color: var(--page-background-color);
-    max-width: 496px;
+    max-width: 320px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 48px;
+    margin-bottom: 72px;
 }
 
 .button {
@@ -250,39 +248,30 @@ input {
 }
 
 .benefits {
-    padding: 120px 0;
+    padding: 96px 16px;
 }
 
 .about-us {
     display: flex;
-    gap: 24px;
+    gap: 72px;
+    flex-wrap: wrap;
 }
 
 .about-us-item {
-    width: calc((100% - 72px) / 4);
-}
-
-.about-us-box {
     display: flex;
-    width: 100%;
-    height: 112px;
-    background-color: var(--light-backgrounds);
-    border: none;
-    border-radius: 4px;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 8px;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 396px;
 }
 
 .about-us .section-heading {
     font-family: "Roboto", sans-serif;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02px;
     color: var(--heading-color);
-    margin-bottom: 8px;
-    margin-top: 8px;
+    text-align: center;
 }
 
 .about-us .text {
@@ -290,10 +279,15 @@ input {
     font-size: var(--font-size);
     line-height: 1.5;
     letter-spacing: 0.02em;
+    align-self: stretch;
+}
+
+.about-us-box {
+    display: none;
 }
 
 .design-samples {
-    padding-bottom: 120px;
+    display: none;
 }
 
 .section-title {
@@ -307,24 +301,16 @@ input {
     margin-bottom: 72px;
 }
 
-.images-studio {
-    display: flex;
-    gap: 24px;
-}
-
-.design-item {
-    width: calc((100% - 48px) / 3);
-    border: 1px solid var(--accent-color);
-}
-
 .team-block {
     background-color: var(--light-backgrounds);
-    padding: 120px 0;
+    padding: 96px 0;
 }
 
 .employees {
     display: flex;
+    flex-wrap: wrap;
     gap: 24px;
+    width: 100%;
 }
 
 .employees .name {
@@ -381,11 +367,12 @@ input {
 
 .card {
     background-color: var(--page-background-color);
-    width: calc((100% - 72px) / 4);
+    max-width: 264px;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0 1px 6px rgba(46, 47, 66, 0.08),
         0 1px 1px rgba(46, 47, 66, 0.16),
         0 2px 1px rgba(46, 47, 66, 0.08);
+        margin: 0 auto;
 }
 
 .card-info {
@@ -393,19 +380,20 @@ input {
 }
 
 .customers {
-    padding: 120px 0;
+    padding: 96px 16px;
 }
 
 .customers-list {
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    gap: 72px 16px;
     justify-content: center;
     align-items: center;
 }
 
 .customers-icon-item {
     height: 88px;
-    width: calc((100% - 120px) / 6);
+    width: calc((100% - 16px) / 2);
 }
 
 .customers-icon {
@@ -422,7 +410,7 @@ input {
     fill: currentColor;
     width: 100%;
     height: 100%;
-    padding: 16px 32px;
+    padding: 16px 40px;
     transition: color var(--typical-transition), border-color var(--typical-transition);
 }
 
