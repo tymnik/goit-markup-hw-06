@@ -14,13 +14,12 @@
     }
 
     .header {
-        height: 72px;
-        padding: 0 16px;
+        padding: 16px;
     }
 
-        .header-content {
-            align-items: center;
-        }
+    .header-content {
+        align-items: center;
+    }
 
     .page-nav {
         display: flex;
@@ -163,15 +162,15 @@
         display: inline-block;
     }
 
-    .social-media-footer {
-        margin-right: 80px;
-    }
-
     .footer-form {
         display: flex;
         gap: 24px;
         flex-direction: row;
         align-items: center;
+    }
+
+    .social-media-title {
+        justify-content: start;
     }
 
     .subscribe-text {
