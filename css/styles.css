@@ -94,11 +94,10 @@ input {
 
 .header-content {
     display: flex;
-    align-items: center;
 }
 
 .header-nav {
-    display: none;
+    display: flex;
 }
 
 .page-nav {
