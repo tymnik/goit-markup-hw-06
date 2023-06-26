@@ -149,6 +149,8 @@ input {
     flex-direction: column;
     justify-content: space-between;
     overflow: auto;
+    transform: translateX(0);
+    transition: 1000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mob-menu-list {
@@ -290,15 +292,6 @@ input {
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.button:hover {
-    background-color: var(--pressed-state-color);
-}
-
-.button:active,
-.button:focus {
-    background-color: var(--pressed-state-color);
-}
-
 .benefits {
     padding: 96px 16px;
 }
@@ -358,6 +351,11 @@ input {
     padding: 96px 0;
 }
 
+.img-employer {
+    width: 100%;
+    height: auto;
+}
+
 .employees {
     display: flex;
     flex-wrap: wrap;
@@ -403,11 +401,6 @@ input {
     align-items: center;
     justify-content: center;
     transition: background-color var(--typical-transition);
-}
-
-.employee-soc-link:hover,
-.employee-soc-link:focus {
-    background-color: var(--pressed-state-color);
 }
 
 .employee-soc-links {
@@ -462,14 +455,7 @@ input {
     fill: currentColor;
     width: 100%;
     height: 100%;
-    /* padding: 16px 40px; */
     transition: color var(--typical-transition), border-color var(--typical-transition);
-}
-
-.customers-icon-link:hover,
-.customers-icon-link:focus {
-    color: var(--pressed-state-color);
-    border-color: var(--pressed-state-color);
 }
 
 .portfolio {
@@ -666,11 +652,6 @@ input {
     height: 40px;
 }
 
-.footer-soc-link:hover,
-.footer-soc-link:focus {
-    background-color: var(--success-color);
-}
-
 .subscription-footer {
     display: flex;
     flex-direction: column;
@@ -739,15 +720,6 @@ input {
     cursor: pointer;
 }
 
-.footer-subscribe-btn:hover {
-    background-color: var(--pressed-state-color);
-}
-
-.footer-subscribe-btn:active,
-.footer-subscribe-btn:focus {
-    background-color: var(--pressed-state-color);
-}
-
 .footer-subscribe-icon {
     fill: var(--page-background-color);
     display: flex;
@@ -802,14 +774,6 @@ input {
 
 .modal-close {
     transition: fill var(--typical-transition);
-}
-
-.modal-btn:hover,
-.modal-btn:focus,
-.modal-btn:active {
-    background-color: var(--pressed-state-color);
-    border: none;
-    fill: var(--page-background-color);
 }
 
 .is-hidden {
@@ -873,14 +837,6 @@ input {
     transition: fill var(--typical-transition);
 }
 
-.input-modal:focus {
-    border-color: var(--brand-color);
-}
-
-.input-modal:focus+.modal-svg {
-    fill: var(--brand-color);
-}
-
 .textarea-field {
     margin-bottom: 16px;
 }
@@ -908,10 +864,6 @@ input {
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.04em;
-}
-
-.textarea:focus {
-    border-color: var(--brand-color);
 }
 
 .checkbox {
@@ -983,13 +935,4 @@ input {
     cursor: pointer;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
     transition: background-color var(--typical-transition);
-}
-
-.modal-send-btn:hover {
-    background-color: var(--pressed-state-color);
-}
-
-.modal-send-btn:active,
-.modal-send-btn:focus {
-    background-color: var(--pressed-state-color);
 }

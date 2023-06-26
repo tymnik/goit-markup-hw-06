@@ -228,7 +228,9 @@
         gap: 40px;
     }
 
-
+    .current::after {
+        bottom: -22px;
+    }
 
     .hero-block {
         background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
@@ -250,6 +252,15 @@
     .hero {
         font-size: 56px;
         margin-bottom: 48px;
+    }
+
+    .button:hover {
+        background-color: var(--pressed-state-color);
+    }
+
+    .button:active,
+    .button:focus {
+        background-color: var(--pressed-state-color);
     }
 
     .benefits {
@@ -291,12 +302,23 @@
         max-width: unset;
     }
 
+    .employee-soc-link:hover,
+    .employee-soc-link:focus {
+        background-color: var(--pressed-state-color);
+    }
+
     .customers {
         padding: 120px 0;
     }
 
     .customers-icon-item {
         width: calc((100% - 80px) / 6);
+    }
+
+    .customers-icon-link:hover,
+    .customers-icon-link:focus {
+        color: var(--pressed-state-color);
+        border-color: var(--pressed-state-color);
     }
 
     .design-samples {
@@ -331,7 +353,50 @@
         margin-right: 80px;
     }
 
+    .footer-soc-link:hover,
+    .footer-soc-link:focus {
+        background-color: var(--success-color);
+    }
+
+    .footer-subscribe-btn:hover {
+        background-color: var(--pressed-state-color);
+    }
+
+    .footer-subscribe-btn:active,
+    .footer-subscribe-btn:focus {
+        background-color: var(--pressed-state-color);
+    }
+
     .modal {
         width: 408px;
+    }
+
+    .modal-btn:hover,
+    .modal-btn:focus,
+    .modal-btn:active {
+        background-color: var(--pressed-state-color);
+        border: none;
+        fill: var(--page-background-color);
+    }
+
+    .input-modal:focus {
+        border-color: var(--brand-color);
+    }
+
+    .input-modal:focus+.modal-svg {
+        fill: var(--brand-color);
+    }
+
+    .textarea:focus {
+        border-color: var(--brand-color);
+    }
+
+    .modal-send-btn:hover {
+        background-color: var(--pressed-state-color);
+    }
+
+    .modal-send-btn:active,
+    .modal-send-btn:focus {
+        background-color: var(--pressed-state-color);
     }
 }
