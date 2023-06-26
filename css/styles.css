@@ -716,7 +716,7 @@ input {
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
     transition: transform var(--typical-transition);
-    width: 100%;
+    max-width: 408px;
     min-height: 584px;
     border: none;
     border-radius: 4px;
