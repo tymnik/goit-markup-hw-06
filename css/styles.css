@@ -88,7 +88,8 @@ input {
 
 .header {
     border-bottom: 1px solid #e7e9fc;
-    padding: 25px 16px 24px 16px;
+    max-height: 72px;
+    padding: 24px 16px;
     box-shadow: 0 2px 1px rgba(46, 47, 66, 0.08), 0 1px 1px rgba(46, 47, 66, 0.16), 0 1px 6px rgba(46, 47, 66, 0.08);
 }
 
@@ -108,20 +109,106 @@ input {
     display: none;
 }
 
-.current {
-    position: relative;
-    color: var(--pressed-state-color);
+.burger-icon {
+    fill: var(--heading-color);
 }
 
-.current::after {
-    position: absolute;
-    left: 0;
-    bottom: -1px;
-    content: "";
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-    background-color: var(--pressed-state-color);
+.mob-menu-btn {
+    display: block;
+    border: none;
+    background-color: transparent;
+    margin-left: auto;
+}
+
+.close-mob-icon {
+    fill: var(--heading-color);
+}
+
+.mob-menu-close {
+    display: flex;
+    margin-left: auto;
+    border-radius: 50%;
+    border: 1px solid var(--heading-color);
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-backgrounds);
+    margin-bottom: 32px;
+}
+
+.mob-menu {
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    padding: 24px 24px 40px 40px;
+    width: 100vw;
+    height: 100%;
+    background-color: var(--page-background-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: auto;
+}
+
+.mob-menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.mob-link {
+    font-family: "Roboto", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--heading-color);
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+}
+
+.mob-menu-contacts {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+}
+
+.mob-address-block {
+    margin-bottom: 48px;
+}
+
+.mob-address-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.mob-tel {
+    font-family: "Roboto", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--heading-color);
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    font-style: initial;
+}
+
+.mob-mail {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--heading-color);
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    font-style: initial;
+}
+
+.mob-soc-links {
+    display: flex;
+    gap: 56px;
+    flex-wrap: wrap;
 }
 
 .logo {
