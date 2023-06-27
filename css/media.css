@@ -2,7 +2,22 @@
 
 @media screen and (min-width: 428px) {
     .container {
-        max-width: 396px;
+        max-width: 428px;
+    }
+
+    .mob-tel {
+        font-size: 36px;
+    }
+
+    .mob-soc-links {
+        gap: 56px;
+    }
+
+    .footer-input {
+        width: 398px;
+    }
+    .modal {
+        min-width: 392px;
     }
 }
 
@@ -10,7 +25,7 @@
 
 @media screen and (min-width: 768px) {
     .container {
-        max-width: 736px;
+        max-width: 768px;
     }
 
     .header {
@@ -148,14 +163,16 @@
         width: calc((100% - 24px) / 2);
     }
 
+    .tab-container {
+        max-width: 584px;
+    }
+
     .employees {
         gap: 64px 24px;
-        max-width: 584px;
-        margin: 0 auto;
     }
 
     .customers {
-        padding: 96px 92px;
+        padding: 96px 0;
     }
 
     .customers-icon-item {
@@ -207,19 +224,10 @@
         box-shadow: 0 1px 6px rgba(46, 47, 66, 0.08), 0 1px 1px rgba(46, 47, 66, 0.16), 0 2px 1px rgba(46, 47, 66, 0.08);
     }
 
-    .footer {
-        padding-left: 108px;
-    }
-
     .footer-content {
-        display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
         align-items: baseline;
-    }
-
-    .footer-first-part {
-        margin-right: 24px;
+        gap: 72px 24px;
     }
 
     .flogo {
@@ -231,6 +239,10 @@
         gap: 24px;
         flex-direction: row;
         align-items: center;
+    }
+
+    .footer-input {
+        width: 264px;
     }
 
     .social-media-title {
@@ -246,7 +258,13 @@
 
 @media screen and (min-width: 1158px) {
     .container {
-        max-width: 1128px;
+        max-width: 1158px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .tab-container {
+        max-width: 1158px;
     }
 
     .hlogo {
@@ -254,7 +272,7 @@
     }
 
     .header {
-        padding: 25.5px 16px;
+        padding: 25.5px 0;
     }
 
     .address {
@@ -417,6 +435,10 @@
 
     .footer {
         padding: 101.5px 0 100px;
+    }
+
+    .footer-content {
+        gap: unset;
     }
 
     .footer-first-part {

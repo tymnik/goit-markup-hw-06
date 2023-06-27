@@ -193,7 +193,7 @@ input {
 
 .mob-tel {
     font-family: "Roboto", sans-serif;
-    font-size: 36px;
+    font-size: 25px;
     font-weight: 700;
     color: var(--brand-color);
     line-height: 1.11;
@@ -213,8 +213,7 @@ input {
 
 .mob-soc-links {
     display: flex;
-    gap: 56px;
-    flex-wrap: wrap;
+    gap: 30px;
 }
 
 .logo {
@@ -361,7 +360,7 @@ input {
 .employees {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 72px;
     width: 100%;
 }
 
@@ -552,10 +551,7 @@ input {
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-}
-
-.footer-first-part {
-    margin-bottom: 72px;
+    gap: 72px;
 }
 
 .flogo {
@@ -577,7 +573,6 @@ input {
 .social-media-footer {
     display: flex;
     flex-direction: column;
-
 }
 
 .social-media-title {
@@ -595,7 +590,6 @@ input {
 .footer-soc-links {
     display: flex;
     gap: 16px;
-    margin-bottom: 72px;
 }
 
 .footer-soc-link {
@@ -716,6 +710,7 @@ input {
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
     transition: transform var(--typical-transition);
+    min-width: 310px;
     max-width: 408px;
     min-height: 584px;
     border: none;
